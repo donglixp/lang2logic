@@ -11,7 +11,8 @@ git clone https://github.com/torch/distro.git ~/torch --recursive
 cd ~/torch; bash install-deps;
 ```
 
-- Replace ~/torch/extra/cunn/lib/THCUNN/ClassNLLCriterion.cu with the one in the ./install folder
+- Replace ~/torch/extra/cunn/lib/THCUNN/ClassNLLCriterion.cu with the one in the ./install folder.
+
 The original ClassNLLCriterion.cu throws an error when the input is 0. We modify this file to make it accept 0.
 
 - Install Torch7
