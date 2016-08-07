@@ -38,7 +38,6 @@ python pull_data.py
 ```
 
 - Run experiments
-Usage:
 ```sh
 ./run.sh [seq2seq|seq2tree] [jobqueries|geoqueries|atis] [lstm|attention] GPU_ID
 ```
