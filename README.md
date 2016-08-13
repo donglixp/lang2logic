@@ -1,4 +1,4 @@
-# Setup and Usage
+# Setup
 
 - If you have already installed Torch7, please rename its folder name.
 ```sh
@@ -38,21 +38,36 @@ pip install path.py
 python pull_data.py
 ```
 
+# Usage
+
+- Run pretrained models
+```sh
+./pretrain.sh [seq2seq|seq2tree] [jobqueries|geoqueries|atis] [lstm|attention] GPU_ID
+```
+
+```sh
+# run seq2seq without attention
+./pretrain.sh seq2seq jobqueries lstm
+# print results
+cat seq2seq/jobqueries/dump_lstm/pretrain.t7.sample
+# run seq2seq with attention
+./pretrain.sh seq2seq jobqueries attention
+# print results
+cat seq2seq/jobqueries/dump_attention/pretrain.t7.sample
+```
+
 - Run experiments
 ```sh
 ./run.sh [seq2seq|seq2tree] [jobqueries|geoqueries|atis] [lstm|attention] GPU_ID
 ```
-(At least one GPU card is required.)
 
 ```sh
 # run seq2seq without attention
 ./run.sh seq2seq jobqueries lstm
+# print results
+cat seq2seq/jobqueries/dump_lstm/model.t7.sample
 # run seq2seq with attention
 ./run.sh seq2seq jobqueries attention
-```
-
-- Print results
-```sh
-cat seq2seq/jobqueries/dump_lstm/model.t7.sample
+# print results
 cat seq2seq/jobqueries/dump_attention/model.t7.sample
 ```
