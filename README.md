@@ -77,6 +77,6 @@ cat seq2seq/jobqueries/dump_attention/model.t7.sample
 * GCC: 4.9.1 20140922 (Red Hat 4.9.1-10)
 * GPU: 980 or titan x
 * CUDA: 7.5
-* Torch7: c0e51b98acbb54e6655343a57152b6e711ffdc2b (https://drive.google.com/file/d/0B8yp1gOBCztycW42eDNNaExWSlU/view?usp=sharing)
+* Torch7: c0e51b98acbb54e6655343a57152b6e711ffdc2b (https://drive.google.com/file/d/0B8yp1gOBCztycW42eDNNaExWSlU/view?usp=sharing ; 1. clean.sh 2. install.sh)
 
 The code is only tested on the above environment.
